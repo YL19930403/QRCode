@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import <CoreImage/CoreImage.h>
 #import "UIImage+QRCode.h"
+#import "ScaningViewController.h"
+
 
 @interface ViewController ()
 
@@ -42,4 +44,18 @@
    self.imageV.image = [UIImage createNonInterpolatedUIImageFromCIImage:outputImage withSize:200];
 }
 
+
+- (IBAction)ButtonClick:(UIButton *)sender {
+    ScaningViewController * scaningVC = [ScaningViewController scaningViewController];
+    [self presentViewController:scaningVC animated:YES completion:nil];
+}
+
 @end
+
+
+
+
+
+
+
+

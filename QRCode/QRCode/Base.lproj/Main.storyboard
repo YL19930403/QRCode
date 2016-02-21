@@ -26,18 +26,31 @@
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lbF-RH-u51">
-                                <rect key="frame" x="277.5" y="277.5" width="45" height="45"/>
+                                <rect key="frame" x="277" y="277" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="lbF-RH-u51" secondAttribute="height" multiplier="1:1" id="A4f-sp-y1r"/>
                                     <constraint firstAttribute="width" constant="45" id="Iiy-ES-xgh"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SY9-vV-iPO">
+                                <rect key="frame" x="247.5" y="80" width="105" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="2BX-Ga-8Vt"/>
+                                    <constraint firstAttribute="width" constant="105" id="crh-8J-WC1"/>
+                                </constraints>
+                                <state key="normal" title="进去后点击屏幕"/>
+                                <connections>
+                                    <action selector="ButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ano-co-FzV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lbF-RH-u51" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ch-e1-4wx"/>
                             <constraint firstItem="Yeh-92-VBa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Zk-5Q-o30"/>
+                            <constraint firstItem="SY9-vV-iPO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qf2-97-0zN"/>
                             <constraint firstItem="lbF-RH-u51" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qq9-tC-v6J"/>
+                            <constraint firstItem="SY9-vV-iPO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="Ycq-Mr-MG7"/>
                             <constraint firstItem="Yeh-92-VBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dkv-or-QJb"/>
                         </constraints>
                     </view>
