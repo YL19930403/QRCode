@@ -19,25 +19,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yeh-92-VBa">
-                                <rect key="frame" x="217.5" y="217.5" width="165" height="165"/>
+                                <rect key="frame" x="217" y="217" width="165" height="165"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="165" id="FGB-8C-L3l"/>
                                     <constraint firstAttribute="width" secondItem="Yeh-92-VBa" secondAttribute="height" multiplier="1:1" id="Z6g-pA-cr2"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lbF-RH-u51">
+                                <rect key="frame" x="277.5" y="277.5" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lbF-RH-u51" secondAttribute="height" multiplier="1:1" id="A4f-sp-y1r"/>
+                                    <constraint firstAttribute="width" constant="45" id="Iiy-ES-xgh"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="lbF-RH-u51" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3ch-e1-4wx"/>
                             <constraint firstItem="Yeh-92-VBa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Zk-5Q-o30"/>
+                            <constraint firstItem="lbF-RH-u51" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qq9-tC-v6J"/>
                             <constraint firstItem="Yeh-92-VBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dkv-or-QJb"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageV" destination="Yeh-92-VBa" id="G6f-Tb-xmc"/>
+                        <outlet property="middleImgV" destination="lbF-RH-u51" id="R6q-Zt-iKt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="305" y="334"/>
         </scene>
     </scenes>
 </document>

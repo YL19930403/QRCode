@@ -16,6 +16,7 @@
 		29BD24C91C79B74500C51F72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29BD24C71C79B74500C51F72 /* LaunchScreen.storyboard */; };
 		29BD24D41C79B74600C51F72 /* QRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD24D31C79B74600C51F72 /* QRCodeTests.m */; };
 		29BD24DF1C79B74600C51F72 /* QRCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD24DE1C79B74600C51F72 /* QRCodeUITests.m */; };
+		29BD24EE1C79BC6000C51F72 /* UIImage+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BD24ED1C79BC6000C51F72 /* UIImage+QRCode.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		29BD24DA1C79B74600C51F72 /* QRCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		29BD24DE1C79B74600C51F72 /* QRCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeUITests.m; sourceTree = "<group>"; };
 		29BD24E01C79B74600C51F72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29BD24EC1C79BC6000C51F72 /* UIImage+QRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QRCode.h"; sourceTree = "<group>"; };
+		29BD24ED1C79BC6000C51F72 /* UIImage+QRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QRCode.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +110,8 @@
 				29BD24BA1C79B74500C51F72 /* AppDelegate.m */,
 				29BD24BC1C79B74500C51F72 /* ViewController.h */,
 				29BD24BD1C79B74500C51F72 /* ViewController.m */,
+				29BD24EC1C79BC6000C51F72 /* UIImage+QRCode.h */,
+				29BD24ED1C79BC6000C51F72 /* UIImage+QRCode.m */,
 				29BD24BF1C79B74500C51F72 /* Main.storyboard */,
 				29BD24C51C79B74500C51F72 /* Assets.xcassets */,
 				29BD24C71C79B74500C51F72 /* LaunchScreen.storyboard */,
@@ -275,6 +280,7 @@
 			files = (
 				29BD24BE1C79B74500C51F72 /* ViewController.m in Sources */,
 				29BD24C41C79B74500C51F72 /* QRCode.xcdatamodeld in Sources */,
+				29BD24EE1C79BC6000C51F72 /* UIImage+QRCode.m in Sources */,
 				29BD24BB1C79B74500C51F72 /* AppDelegate.m in Sources */,
 				29BD24B81C79B74500C51F72 /* main.m in Sources */,
 			);

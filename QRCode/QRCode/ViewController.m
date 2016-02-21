@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import <CoreImage/CoreImage.h>
+#import "UIImage+QRCode.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageV;
+@property (weak, nonatomic) IBOutlet UIImageView *middleImgV;
 @end
 
 @implementation ViewController
@@ -35,7 +37,9 @@
     
     //3.获取二维码
     CIImage * outputImage = [filter outputImage];
-    self.imageV.image = [UIImage imageWithCIImage:outputImage];
+    self.middleImgV.image = [UIImage imageNamed:@"me"];
+//    self.imageV.image = [UIImage imageWithCIImage:outputImage];
+   self.imageV.image = [UIImage createNonInterpolatedUIImageFromCIImage:outputImage withSize:200];
 }
 
 @end
